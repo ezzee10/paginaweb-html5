@@ -1,0 +1,1393 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #fe4918;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+
+.boton {
+  background-color: #fe4918;
+  padding: 10px 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .3s ease;
+  border: 1px solid #fe4918;
+}
+
+.boton.transparente {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.boton.hollow {
+  background-color: white;
+  color: #fe4918;
+}
+
+.boton:hover {
+  background-color: #e33000;
+}
+
+.ver-todos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2::after {
+  content: '';
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  height: 30px;
+  width: 100px;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.contenedor-seccion {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contenedor-seccion p {
+  font-size: 1.2em;
+}
+
+.seccion {
+  padding: 30px 0;
+}
+
+
+@media (min-width: 768px) {
+  .contenedor {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contenedor {
+    width: 90%;
+  }
+}
+
+/**LETTERING**/
+
+h1.nombre-sitio span {
+  position: relative;
+  text-shadow: 0 0 30px black;
+}
+
+@media (min-width: 992px) {
+  .char1 {
+    top: 20px;
+    right: 20px;
+    color: red;
+  }
+
+  .char2 {
+    top: 0px;
+    right: -20px;
+    color: green;
+  }
+
+  .char3 {
+    top: 10px;
+    right: 20px;
+    color: cyan;
+  }
+
+  .char4 {
+    top: 5px;
+    right: 10px;
+    color: blue;
+  }
+
+  .char5 {
+    top: 15px;
+    right: 10px;
+    color: yellow;
+  }
+
+  .char6 {
+    top: 5px;
+    right: 10px;
+    color: white;
+  }
+
+  .char7 {
+    top: 20px;
+    right: -10px;
+    color: brown;
+  }
+
+  .char8 {
+    top: 0px;
+    right: 10px;
+    color: orange;
+  }
+
+  .char9 {
+    top: 10px;
+    right: 20px;
+    color: pink;
+  }
+
+  .char10 {
+    top: 20px;
+    right: 20px;
+    color: black;
+  }
+}
+
+/**HEADER**/
+
+.hero {
+  background-image: url(../img/encabezado.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contenido-header {
+  padding-top: 40px;
+}
+
+.redes-sociales {
+  text-align: center;
+}
+
+.redes-sociales a {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.redes-sociales a:last-of-type {
+  margin-right: 0;
+}
+
+.informacion-evento {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  width: 95%;
+}
+
+
+.informacion-evento p {
+  margin: 0;
+  display: inline;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.informacion-evento p i {
+  color: #fe4918;
+}
+
+.nombre-sitio {
+  grid-column: 1/3;
+  font-size: 10vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 1379) {
+  .nombre-sitio {
+    font-size: 10vw;
+    word-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .informacion-evento p {
+    font-size: 25px;
+  }
+}
+
+p.slogan span {
+  font-weight: bold;
+}
+
+.barra {
+  background-color: #353535;
+  padding: 20px;
+}
+
+.fixed {
+  position: fixed;
+  /*posicion fija*/
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 401;
+  /*ES PARA QUE QUEDE SE SUPERPONGA ARRIBA DE LAS DEMÁS COSAS*/
+}
+
+.imagen-barra {
+  display: inline-block;
+  width: 70%;
+}
+
+/* Menu movil */
+
+.menu-movil {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  top: 20px;
+}
+
+@media (min-width: 768px) {
+  .menu-movil {
+    display: none;
+  }
+
+  .contenido-barra {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-movil:hover {
+  cursor: pointer;
+}
+
+.menu-movil span {
+  height: 5px;
+  width: auto;
+  margin-bottom: 0.6rem;
+  background-color: #ffffff;
+  display: block;
+}
+
+/*NAVEGACION**/
+
+.navegacion {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .navegacion {
+    display: initial !important;
+  }
+
+  .imagen-barra {
+    width: 40%;
+  }
+
+  .contenido-barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.navegacion a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 30px;
+  transition: all .3s ease;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .navegacion a {
+    display: inline;
+    width: 55%;
+  }
+}
+
+.navegacion a:hover {
+  background-color: #fe4918;
+}
+
+.navegacion a:last-of-type {
+  color: #fe4918;
+  border: 1px solid #fe4918;
+}
+
+.navegacion a:last-of-type:hover {
+  color: #ffffff;
+}
+
+@media (min-width: 1050px) {
+  .navegacion a {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1380px) {
+  .navegacion a {
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+}
+
+/**SECCION VIDEO TALLERES PROGRAMA DEL EVENTO**/
+
+.programa {
+  position: relative;
+}
+
+.contenedor-video {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.contenido-programa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.programa-evento {
+  background-color: rgba(255, 255, 255, .8);
+  padding: 15px;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .programa-evento {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .programa-evento {
+    width: 50%;
+  }
+}
+
+.menu-programa {
+  width: 100%;
+  border-bottom: 1px solid #fe4918;
+}
+
+@media (min-width: 768px) {
+  .menu-programa {
+    display: flex;
+    justify-content: space-around
+  }
+}
+
+.menu-programa a {
+  display: block;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.menu-programa a.activo::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 30px;
+  background-image: url('../img/talleres-flecha.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  bottom: -30px;
+}
+
+.menu-programa a i,
+.detalle-evento i {
+  color: #fe4918;
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+/**detalle evento**/
+
+.detalle-evento {
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  padding: 0px 20px;
+}
+
+.detalle-evento:nth-child(2) {
+  border: none;
+}
+
+.detalle-evento p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.ocultar {
+  display: none;
+}
+
+/* Invitados*/
+
+.lista-invitados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .lista-invitados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.invitado {
+  position: relative;
+  overflow: hidden;
+}
+
+.invitado img {
+  max-width: 100%;
+  filter: gray;
+  filter: grayscale(1);
+  transition: all .5s ease-in-out;
+}
+
+.invitado:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transform: rotate(3deg);
+}
+
+.invitado p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, 0.55);
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: #fe4918;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+}
+
+.invitado:hover p {
+  bottom: -80px;
+  opacity: 0;
+}
+
+/**CONTADOR**/
+
+p.numero {
+  color: #fe4918;
+  font-size: 6rem;
+  margin: 0 0 10px 0;
+}
+
+.parallax::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  filter: brightness(.8);
+}
+
+.contador {
+  position: relative;
+  height: auto;
+}
+
+.contador::before {
+  background-image: url(../img/bg-resumen.jpg);
+  content: '';
+}
+
+.resumen-evento {
+  position: relative;
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 15rem);
+}
+
+.resumen-evento li {
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  .resumen-evento {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/**TABLA DE PRECIOS**/
+
+.lista-precios {
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .lista-precios {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .precio {
+    flex-basis: calc(33.3% - 1rem);
+  }
+}
+
+.precio {
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  padding: 40px 0;
+  transition: all .3s ease;
+  margin-bottom: 10px;
+}
+
+.precio:hover {
+  transform: scale(1.1);
+  border: 1px solid #fe4918;
+  box-shadow: 0px 0px 50px #666;
+}
+
+.lista-texto {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #886688;
+  line-height: 26px;
+  margin-top: 0;
+  display: block;
+}
+
+.lista-texto p:before {
+  display: inline-block;
+  font-size: 25px;
+  color: green;
+  padding: 0 5px;
+  font-weight: bold;
+  content: '\2713'
+}
+
+.precio h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.precio p.numero {
+  color: black;
+  margin-bottom: 0px;
+}
+
+/** MAPA **/
+
+.mapa {
+  height: 420px;
+}
+
+/**TESTIMONIALES**/
+
+.testimonial {
+  text-align: center;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid #e1e1e1;
+  background-color: white;
+  padding: 10px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  position: relative;
+}
+
+blockquote p {
+  padding-left: 2rem;
+}
+
+blockquote p::before {
+  font-family: "Font Awesome 5 Free";
+  content: '';
+  background-image: url(../img/quote-left-solid.svg);
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.testimonial cite {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fe4918;
+  font-style: normal;
+  display: block;
+}
+
+.test-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.test-footer img {
+  width: 30%;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.testimonial span {
+  color: black;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .testimoniales {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testimonial {
+    flex-basis: calc(33.3% - 1rem);
+  }
+}
+
+/*** Newsletter: ***/
+
+.newsletter {
+  position: relative;
+}
+
+.newsletter::before {
+  background-image: url(../img/bg-newsletter.jpg);
+  content: '';
+}
+
+.newsletter .contenido {
+  padding: 100px 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.newsletter .contenido p {
+  font-size: 2rem;
+  text-transform: lowercase;
+}
+
+.newsletter .contenido h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/**CONTADOR**/
+
+.cuenta-regresiva {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+}
+
+.cuenta p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .cuenta-regresiva {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cuenta {
+    margin-right: 5rem;
+  }
+}
+
+/**FOOTER**/
+
+.site-footer {
+  background-color: #353535;
+  margin-top: 40px;
+}
+
+.contenido-footer {
+  padding-top: 4rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2.2rem;
+    text-align: justify;
+  }
+}
+
+.contenido-footer .ultimos-tweets p {
+  font-size: 0.8rem;
+}
+
+.contenido-footer h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.contenido-footer h3 span {
+  color: #fe4918;
+}
+
+@media (min-width: 768px) {
+  .contenido-footer .menu .redes-sociales {
+    text-align: start;
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+  background-color: #2e2e2e;
+  padding: 1rem;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.copyright span {
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/***INTERNAS***/
+
+/*Conferencia*/
+
+.galeria a {
+  display: inline-block;
+  margin-bottom: 5px;
+
+}
+
+/**Registro**/
+
+form.registro h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+  font-size: 30px;
+}
+
+.paquetes .lista-precios h3 {
+  font-size: 20px;
+}
+
+form.registro label {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fe4918;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.caja {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.campo {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .datos_user {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.paquetes .lista-precios .precio:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.paquetes .lista-precios {
+  padding: 0px;
+}
+
+.orden label {
+  display: block;
+}
+
+.orden input {
+  width: 150px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.contenido-dia {
+  padding: 20px;
+  display: none;
+}
+
+.contenido-dia2 p {
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .contenido-dia2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+  }
+}
+
+.contenido-dia2 label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contenido-dia2 input {
+  margin-right: 10px;
+}
+
+.contenido-dia2 label time {
+  color: #fe4918;
+  font-weight: bold;
+}
+
+/*Resumen registro*/
+
+@media (min-width: 768px) {
+  .contenido-resumen {
+    display: flex;
+  }
+
+  .extras {
+    flex-basis: calc(50% - 1rem);
+    text-align: left;
+  }
+
+  .total {
+    flex-basis: calc(50% - 1rem);
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+.resumen .extras input {
+  text-align: center;
+}
+
+.total {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.resumen p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.resumen .extras {
+  padding: 30px;
+}
+
+.extras .orden input {
+  margin: 15px 0;
+}
+
+.calcular {
+  text-align: center;
+}
+
+#lista-productos {
+  background-color: #e1e1e1;
+  padding: 20px;
+  display: none;
+}
+
+#suma-total {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fe4918;
+  text-align: center;
+}
+
+#error {
+  text-align: center;
+  padding: 20px;
+}
+
+/** CALENDARIO **/
+
+
+.calendar {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.dia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .dia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contenido-dias {
+  border: 2px solid #e1e1e1;
+  padding: 10px 0;
+  transition: all .3s ease;
+
+}
+
+.contenido-dias:hover {
+  background-color: #e1e1e1;
+  transform: scale(1.1);
+}
+
+.contenido-dias .titulo {
+  color: #fe4918;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contenido-dias i {
+  color: #fe4918;
+}
+
+.titulo-calendario {
+  text-transform: uppercase;
+  color: white;
+  background-color: #fe4918;
+  padding: 10px;
+
+}
+
+/*Colorbox*/
+
+.cboxElement {
+  padding: 30px;
+  text-align: center;
+}
+
+/*Cosas al azar por ahí*/
+
+.activo2 {
+  border-bottom: 2px solid #fe4918;
+}
+
+.opacarBoton {
+  opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
